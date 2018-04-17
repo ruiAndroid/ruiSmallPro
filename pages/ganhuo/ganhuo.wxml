@@ -1,0 +1,10 @@
+<!--pages/ganhuo/ganhuo.wxml-->
+<block wx:for="{{list}}">
+  <navigator url="/pages/ganhuo/ganhuoDetails?title={{item.title}}" hover-class="navigator-hover">
+      <image src="{{item.img}}" style="width:100%;" class="pic"></image>
+      <view class="right">
+        <text class="title">{{item.title}}</text>
+      </view>
+  </navigator>
+</block>
+<toast hidden="{{hiddenToast}}" duration="2000" bindchange="toastHidden" >load OK!</toast>

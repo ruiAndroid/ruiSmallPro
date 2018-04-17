@@ -1,0 +1,2 @@
+<!--pages/ganhuo/ganhuoDetails.wxml-->
+<text>{{title}}</text>

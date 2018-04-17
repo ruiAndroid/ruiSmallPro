@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/ganhuo/ganhuo",
+    "pages/ganhuo/ganhuoDetails"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarTitleText": "rui",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#0094ff",
+    "enablePullDownRefresh": true
+  },
+
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#0094ff",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志1"
+      },
+      {
+        "pagePath": "pages/ganhuo/ganhuo",
+        "text": "干货"
+      }
+    ]
+  }
+}
