@@ -1,10 +1,17 @@
 <!--pages/ganhuo/ganhuo.wxml-->
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">    
+      <block wx:for="{{banner}}" wx:for-index="index">    
+        <swiper-item>    
+          <image src="{{item.img_url}}" class="slide-image" mode="scaleToFill" style="width:100%;height:100%"/>    
+        </swiper-item>    
+      </block>    
+</swiper> 
 <block wx:for="{{list}}">
-  <navigator url="/pages/ganhuo/ganhuoDetails?title={{item.title}}" hover-class="navigator-hover">
+  <navigator url="/pages/ganhuo/ganhuoDetails?title={{item.title}}?url={{item.url}}" hover-class="navigator-hover">
       <image src="{{item.img}}" style="width:100%;" class="pic"></image>
       <view class="right">
         <text class="title">{{item.title}}</text>
       </view>
   </navigator>
 </block>
-<toast hidden="{{hiddenToast}}" duration="2000" bindchange="toastHidden" >load OK!</toast>
+ <toast hidden="{{hiddenToast}}" icon="success" duration="2000" bindchange="toastHidden" >load OK!</toast> 

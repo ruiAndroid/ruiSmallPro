@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    title:"",
+    url:"",
+    title:""
   },
 
   /**
@@ -14,8 +15,10 @@ Page({
   onLoad: function (options) {
     console.log(options.title)
     this.title=options.title
+    this.url=options.url
     this.setData({
-      title:this.title
+      title:this.title,
+      url:this.url
     })
   },
 

@@ -7,7 +7,8 @@ Page({
   data: {
     list: [],
     //是否显示toast
-    hiddenToast: true
+    hiddenToast: true,
+    banner:[]
   },
   /**
    * 生命周期函数--监听页面加载
@@ -27,6 +28,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    getBannerData()
     getData(false)
   },
 
@@ -65,7 +67,29 @@ Page({
 
   }
 })
+//获取轮播图数据
+var getBannerData=function(){
+  wx.request({
+    url: 'https://lion.tuyangdanci.com/v1/goods/banners',
+    method:'POST',
+    data:{
+      user_id:"5aaa65db362d0e529c08470a"
+    },
+    header:{
+      'content-type': 'application/json' // 默认值
+    },
+    //请求成功的回调
+    success:function(res){
+      this.banner=res.data
+      console.log("打印轮播图数据")
+      console.log(this.banner)
+      that.setData({
+        banner:this.banner.data
+      })
+    }
+  })
 
+}
 //请求网络数据，isPul区分用户是否下拉操作
 var getData = function (isPull) {
   //请求干货列表的数据
@@ -94,6 +118,11 @@ var getData = function (isPull) {
     that.setData({
       hiddenToast:false
     })
+    setTimeout(function(){
+      that.setData({
+        hiddenToast: true
+      })
+    },1000)
     //停止下拉
     wx.stopPullDownRefresh()
   }
