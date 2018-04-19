@@ -6,8 +6,6 @@ Page({
    */
   data: {
     list: [],
-    //是否显示toast
-    hiddenToast: true,
     banner:[]
   },
   /**
@@ -115,13 +113,11 @@ var getData = function (isPull) {
     }
   })
   if (isPull) {
-    that.setData({
-      hiddenToast:false
+    wx.showLoading({
+      title: '刷新中...',
     })
     setTimeout(function(){
-      that.setData({
-        hiddenToast: true
-      })
+      wx.hideLoading()
     },1000)
     //停止下拉
     wx.stopPullDownRefresh()

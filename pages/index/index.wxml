@@ -1,13 +1,11 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  <!-- 头像-->
+  <!-- image组件的默认宽度是300px,高度是225px-->
+    <image class="user-avatar" src="/images/jia.png"></image>
+    <!-- 文本-->
+    <text class="user-name"><text style='color:red;'>贾\n</text>大神</text>
+    <view class="motor-container">
+      <text class="motor">what the fuck!</text>
+    </view>
 </view>

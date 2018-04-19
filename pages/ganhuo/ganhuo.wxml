@@ -14,4 +14,4 @@
       </view>
   </navigator>
 </block>
- <toast hidden="{{hiddenToast}}" icon="success" duration="2000" bindchange="toastHidden" >load OK!</toast> 
+
