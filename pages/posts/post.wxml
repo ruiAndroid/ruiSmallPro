@@ -1,0 +1,9 @@
+<!--pages/posts/post.wxml-->
+<!--新闻列表界面-->
+<import src="post-item/post-item-template.wxml"/>
+<block wx:for="{{post_content}}" wx:for-item="item" wx:for-index="index">
+  <view catchtap='toPostDetails' data-postId="{{item.postId}}">
+        <template is="postItem" data="{{...item}}"/>
+  </view>
+</block>
+

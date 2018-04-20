@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/ganhuo/ganhuo",
-    "pages/ganhuo/ganhuoDetails"
+    "pages/ganhuo/ganhuoDetails",
+    "pages/posts/post",
+    "pages/posts/post-detail/post-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,7 +26,7 @@
       },
       {
         "pagePath": "pages/logs/logs",
-        "text": "日志1"
+        "text": "日志列表"
       },
       {
         "pagePath": "pages/ganhuo/ganhuo",

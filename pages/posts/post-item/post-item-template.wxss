@@ -1,0 +1,86 @@
+/*新闻单个item的整体样式*/
+.post-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  margin-bottom: 40rpx;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ededed;
+  border-top: 1px solid #ededed;
+  padding-bottom: 5rpx;
+}
+/*作者区域的整体样式*/
+.post-author{
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+/*作者头像icon样式*/
+.post-author-icon{
+  width: 65rpx;
+  height: 65rpx;
+
+}
+/*作者发布时间样式*/
+.post-author-date{
+  font-size: 25rpx;
+  margin-left: 20rpx
+
+}
+/*文章标题样式*/
+.post-title{
+  margin-top: 5rpx;
+  margin-left: 20rpx;
+  margin-bottom: 10rpx;
+  font-size: 20px;
+  font-weight: bold;
+}
+/*文章item图片样式*/
+.post-img{
+  width: 100%;
+  height: 340rpx;
+}
+/*文章简介的样式*/
+.post-detail{
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-bottom: 10rpx;
+  font-size: 15px;
+  color: #666;
+}
+
+/*底部整体样式*/
+.post-bottom{
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 16px;
+
+}
+
+/*底部icon样式*/
+.post-bottom-icon-left{
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+
+}
+.post-bottom-icon-right{
+  height: 16px;
+  width: 16px;
+  margin-left: 30rpx;
+  vertical-align: middle;
+}
+/*底部文本样式*/
+.post-bottom-txt{
+  font-size: 15px;
+  margin-left: 10rpx;
+  color: #666;
+
+}

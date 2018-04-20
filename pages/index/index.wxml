@@ -4,8 +4,9 @@
   <!-- image组件的默认宽度是300px,高度是225px-->
     <image class="user-avatar" src="/images/jia.png"></image>
     <!-- 文本-->
-    <text class="user-name"><text style='color:red;'>贾\n</text>大神</text>
-    <view class="motor-container">
+    <text class="user-name"><text style='color:red;'>贾</text>大神</text>
+    <view class="motor-container" catchtap='toPostLists'>
       <text class="motor">what the fuck!</text>
     </view>
+  
 </view>

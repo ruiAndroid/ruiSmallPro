@@ -1,0 +1,17 @@
+<template name="postItem">
+  <view class="post-container">
+  <view class="post-author">
+    <image class="post-author-icon" src="{{avatar}}"> </image>
+    <text class="post-author-date">{{author}}</text>
+  </view>
+  <text class="post-title">{{title}}</text>
+  <image wx:if="{{true}}" class="post-img"src="{{headImgSrc}}"></image>
+  <text class="post-detail">{{detail}}</text>
+  <view class="post-bottom">
+    <image class="post-bottom-icon-left" src='/images/icon/chat1.png'></image>
+    <text class="post-bottom-txt">{{reading}}</text>
+    <image class="post-bottom-icon-right"  src='/images/icon/view.png'></image>
+    <text class="post-bottom-txt">{{collection}}</text>
+  </view>
+</view>
+</template>
