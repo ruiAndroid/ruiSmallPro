@@ -1,0 +1,73 @@
+/*文章详情的container样式*/
+.post-detail-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*文章详情的头部图片*/
+.post-detail-img{
+  width: 100%;
+  height: 500rpxs;
+
+}
+.audio{
+  width: 102rpx;
+  height: 110rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -51rpx;
+  top: 195rpx;
+  opacity: 0.6;
+}
+.post-detail-user-info{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.post-detail-user-icon{
+  width: 70rpx;
+  height: 70rpx;
+  margin-top: 5rpx;
+  margin-left: 10rpx;
+
+}
+.post-detail-user-txt{
+  margin-left: 10rpx;
+  font-size: 15px;
+
+}
+.tool{
+  margin-top: 20rpx;
+  height: 92rpx;
+  width: 100%;
+ 
+}
+.toolImg{
+  float: right;
+  margin-right: 40rpx;
+  height: 92rpx;
+  margin-top: 16rpx;
+}
+.toolImgShare{
+  margin-left: 30rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+.horizon{
+  width: 650rpx;
+  height: 2rpx;
+  background-color: #e5e5e5;
+  vertical-align: middle;
+  margin-top: 46rpx;
+  margin-left: 50rpx;
+}
+.post-detail-content-txt{
+  margin-left: 10rpx;
+  font-size: 15px;
+  margin-top: 20rpx;
+  letter-spacing: 2px;
+
+}
