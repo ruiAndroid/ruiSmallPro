@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    isPlayMusic:false
+    isPlayingMusic:false
   },
   /**
    * 生命周期函数--监听页面加载
@@ -35,19 +35,19 @@ Page({
     wx.onBackgroundAudioPlay(function(){
       console.log("music play")
       that.setData({
-        isPlayMusic:true
+        isPlayingMusic:true
       })
     })
     wx.onBackgroundAudioPause(function(){
       console.log("music pause")
       that.setData({
-        isPlayMusic: false
+        isPlayingMusic: false
       })
     })
     wx.onBackgroundAudioStop(function(){
       console.log("music stop")
       that.setData({
-        isPlayMusic: false
+        isPlayingMusic: false
       })
     })
   },

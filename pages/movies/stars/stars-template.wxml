@@ -1,0 +1,10 @@
+<template name="moviesStarTemplate">
+  <view class="starsContainer">
+    <image></image>
+    <image></image>
+    <image></image>
+    <image></image>
+    <image></image>
+    <text class="starsPoints">9.0</text>
+  </view>
+</template>

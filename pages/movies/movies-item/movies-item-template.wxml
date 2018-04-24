@@ -1,0 +1,8 @@
+<template name="moviesItemTemplate">
+  <view class="moviesItemContainer">
+    <image class="moviesItemImg">
+
+    </image>
+    <text class="moviesItemTitle">我不是潘金莲</text>
+  </view>
+</template>

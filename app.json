@@ -1,11 +1,10 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/ganhuo/ganhuo",
-    "pages/ganhuo/ganhuoDetails",
+    "pages/movies/movies",
     "pages/posts/post",
-    "pages/posts/post-detail/post-detail"
+    "pages/posts/post-detail/post-detail",
+    "pages/ganhuo/ganhuo",
+    "pages/ganhuo/ganhuoDetails"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -19,14 +18,20 @@
     "color": "black",
     "selectedColor": "#0094ff",
     "backgroundColor": "#ffffff",
+    "borderStyle":"white",
+    "position":"top",
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "首页"
+        "pagePath": "pages/movies/movies",
+        "text": "电影列表",
+        "iconPath":"/images/movies/dianying.png",
+        "selectedIconPath":"/images/movies/dianying_hl.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志列表"
+        "pagePath": "pages/posts/post",
+        "text": "新闻列表",
+        "iconPath": "/images/movies/yuedu.png",
+        "selectedIconPath": "/images/movies/yuedu_hl.png"
       },
       {
         "pagePath": "pages/ganhuo/ganhuo",
