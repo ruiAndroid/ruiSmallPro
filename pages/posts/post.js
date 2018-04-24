@@ -15,6 +15,7 @@ Page({
   onLoad: function (options) {
     //options为页面跳转带来的参数
     console.log(postData)
+    //如果在onload中不是异步的绑定，就不需要使用this.setData({}),只需用this.data=data即可实现数据绑定a
     this.setData({
       post_content: postData.postList
     })
@@ -74,7 +75,7 @@ Page({
     var postId=event.currentTarget.dataset.postid
     console.log("post id is:"+postId);
     wx.navigateTo({
-      url: 'post-detail/post-detail',
+      url: 'post-detail/post-detail?id=' + postId,
     })
 
   }
