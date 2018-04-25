@@ -1,2 +1,6 @@
-<!--pages/news/news.wxml-->
-<text>pages/news/news.wxml</text>
+<import src="movies-list/movies-list-template.wxml"/>
+<view >
+  <template is="moviesListTemplate"/>
+  <template is="moviesListTemplate"/>
+  <template is="moviesListTemplate"/>
+</view>

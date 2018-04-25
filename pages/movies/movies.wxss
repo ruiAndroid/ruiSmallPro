@@ -1,1 +1,3 @@
-/* pages/news/news.wxss */
+@import "stars/stars-template.wxss";
+@import "movies-item/movies-item-template.wxss";
+@import "movies-list/movies-list-template.wxss";

@@ -1,10 +1,12 @@
 <template name="moviesStarTemplate">
   <view class="starsContainer">
-    <image></image>
-    <image></image>
-    <image></image>
-    <image></image>
-    <image></image>
-    <text class="starsPoints">9.0</text>
+    <view class="stars">
+      <image src="/images/movies/star.png"></image>
+      <image src="/images/movies/star.png"></image>
+      <image src="/images/movies/star.png"></image>
+      <image src="/images/movies/star.png"></image>
+      <image src="/images/movies/star.png"></image>
+    </view>
+    <text class="startPoint">9.0</text>
   </view>
 </template>

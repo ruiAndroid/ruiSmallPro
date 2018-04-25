@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    
   },
 
   /**
@@ -71,14 +71,15 @@ Page({
     wx.request({
       url: url,
       method:'GET',
-      
+      header:{
+        "Content-Type":"json"
+      },
       success:function(res){
         console.log(res)
       },
       fail:function(error){
         console.log("请求失败:"+error)
       }
-
     })
   }
 })

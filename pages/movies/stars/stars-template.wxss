@@ -1,0 +1,29 @@
+/*评分星整体的样式*/
+.starsContainer{
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+/*评分星的样式*/
+.stars{
+  display: flex;
+  flex-direction: row;
+  height: 20rpx;
+  margin-right: 24rpx;
+  margin-left: 10rpx;  
+}
+
+.stars image{
+  padding-left: 3rpx;
+  height: 20rpx;
+  width: 20rpx;
+
+}
+
+.startPoint{
+  color: #1f3463;
+  font-size: 12px;
+}

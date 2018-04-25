@@ -1,0 +1,36 @@
+.moviesListMoreContainer{
+  margin-top: 10rpx;
+  
+}
+
+.moviesListTitle{
+  font-size: 15px;
+  
+  margin-left: 10rpx;
+  vertical-align: middle;
+}
+
+.moviesListMoreConntent{
+  
+  float: right;
+  margin-right: 10rpx;
+}
+
+.moviesListMoreIcon{
+  width: 20rpx;
+  height: 20rpx;
+  vertical-align: middle;
+
+}
+
+.moviesListMore{
+  font-size: 12px;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.moviesListTemplateList{
+    display: flex;
+    flex-direction: row;
+
+}
