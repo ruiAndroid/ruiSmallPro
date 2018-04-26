@@ -1,36 +1,33 @@
+@import "../movies-item/movies-item-template.wxss";
 .moviesListMoreContainer{
-  margin-top: 10rpx;
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rpx 20rpx;
 }
 
 .moviesListTitle{
   font-size: 15px;
-  
-  margin-left: 10rpx;
   vertical-align: middle;
-}
-
-.moviesListMoreConntent{
-  
-  float: right;
-  margin-right: 10rpx;
 }
 
 .moviesListMoreIcon{
   width: 20rpx;
   height: 20rpx;
-  vertical-align: middle;
-
 }
 
 .moviesListMore{
   font-size: 12px;
-  vertical-align: middle;
-  margin-right: 10rpx;
+  
 }
 
 .moviesListTemplateList{
     display: flex;
     flex-direction: row;
-
+    justify-content: space-around;
+    padding: 10rpx; 
+}
+.moviesListContainer{
+  background-color: #ffffff;
 }

@@ -17,3 +17,23 @@ const formatNumber = n => {
 module.exports = {
   formatTime: formatTime
 }
+
+//将分数转化为星星
+function convertToStars(stars){
+    var num=stars.toString().substring(0,1);  
+    var array=[]
+    for(var i=1;i<=5;i++){
+      if(i<=num){
+        array.push(1)
+      }else{
+        array.push(0)
+      }
+    }
+    return array
+}
+
+module.exports={
+  convertToStars: convertToStars
+}
+
+

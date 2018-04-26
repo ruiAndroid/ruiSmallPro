@@ -1,12 +1,9 @@
 <import src="../stars/stars-template.wxml"/>
 <template name="moviesItemTemplate">
-  <view class="moviesItemTemplateContent">
       <view class="moviesItemContainer">
-      <image src="/images/movies/yourname.jpg" class="moviesItemImg">
-      </image>
-      <text class="moviesItemTitle">你的名字</text>
-      <template is="moviesStarTemplate"></template>
+        <image src="{{converageUrl}}" class="moviesItemImg">
+        </image>
+        <text class="moviesItemTitle">{{title}}</text>
+        <template is="moviesStarTemplate" data="{{stars:stars,average:average}}"></template>
     </view>
-  </view>
-
 </template>

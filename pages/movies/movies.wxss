@@ -1,3 +1,9 @@
-@import "stars/stars-template.wxss";
-@import "movies-item/movies-item-template.wxss";
 @import "movies-list/movies-list-template.wxss";
+.container{
+  background-color: #efefef;
+}
+
+.movies-template{
+  margin-bottom: 20rpx;
+  width: 100%;
+}

@@ -1,8 +1,5 @@
+@import "../stars/stars-template.wxss";
 
-.moviesItemTemplateContent{
-  display: flex;
-  flex-direction: row;
-}
 .moviesItemContainer{
   display: flex;
   flex-direction: column;
@@ -10,13 +7,12 @@
 }
 
 .moviesItemImg{
-  width: 240rpx;
-  height: 350rpx;
-  padding:5.5rpx;
+  width: 220rpx;
+  height: 270rpx;
+  padding-bottom: 20rpx;
 }
 
 .moviesItemTitle{
   font-size: 15px;
-  margin-left: 10rpx;
 
 }
