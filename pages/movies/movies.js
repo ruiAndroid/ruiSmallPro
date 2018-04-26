@@ -81,20 +81,24 @@ Page({
   },
   getMoviesData: function (url, moviesType) {
     var that = this
-    wx.request({
-      url: url,
-      method: 'GET',
-      header: {
-        //这里一定要写成json才能请求带代理的豆瓣服务器
-        "Content-Type": "json"
-      },
-      success: function (res) {
-        that.processDoubanData(res.data, moviesType)
-      },
-      fail: function (error) {
-        console.log("请求失败:" + error)
-      }
+    utils.http(url,function(res){
+      that.processDoubanData(res.data, moviesType)
     })
+    
+    // wx.request({
+    //   url: url,
+    //   method: 'GET',
+    //   header: {
+    //     //这里一定要写成json才能请求带代理的豆瓣服务器
+    //     "Content-Type": "json"
+    //   },
+    //   success: function (res) {
+    //     that.processDoubanData(res.data, moviesType)
+    //   },
+    //   fail: function (error) {
+    //     console.log("请求失败:" + error)
+    //   }
+    // })
   },
   //处理豆瓣数据
   processDoubanData: function (moviesDouban, type) {

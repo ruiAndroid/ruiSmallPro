@@ -32,8 +32,26 @@ function convertToStars(stars){
     return array
 }
 
+function http(url,callback){
+  wx.request({
+    url: url,
+    method: 'GET',
+    header: {
+      //这里一定要写成json才能请求带代理的豆瓣服务器
+      "Content-Type": "json"
+    },
+    success: function (res) {
+      callback(res)
+    },
+    fail: function (error) {
+      console.log("请求失败:" + error)
+    }
+  })
+}
+
 module.exports={
-  convertToStars: convertToStars
+  convertToStars: convertToStars,
+  http:http
 }
 
 
