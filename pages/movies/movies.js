@@ -11,6 +11,7 @@ Page({
     inTheatersMovies: { movies: [], movieType: "" },
     comingSoonMovies: { movies: [], movieType: "" },
     top250Movies: { movies: [], movieType: "" },
+    searchMovies: { movies: [], movieType: "" },
     containerShow:true,
     searchPannel:false
   },
@@ -140,6 +141,12 @@ Page({
           movies: movies, movieType: "top250"
         }
       })
+    }else if(type=="search"){
+      this.setData({
+        searchMovies: {
+          movies: movies, movieType: "search"
+        }
+      })
     }
 
   },
@@ -158,18 +165,32 @@ Page({
 
   },
   onBindConfirm:function(event){
-    
+    //获取用户输入的文本信息
+    var text = event.detail.value
+    console.log(text);
+    //开始搜索
+    var searchUrl=app.globalData
+      .doubanBase+"/v2/movie/search?q="+text;
+    this.getMoviesData(searchUrl,"search")
   },
+  //失去焦点触发
   onBindBlur:function(event){
-    this.setData({
-      containerShow: true,
-      searchPannel: false
-    })
-  }, 
+   
+
+  },
+  //触发搜索事件 
+  onBindChange:function(event){
+    
+
+  },
   onCancelImgTap:function(event){
     this.setData({
       containerShow: true,
-      searchPannel: false
+      searchPannel: false,
+      searchMovies:{
+        movies:[],
+        movieType:""
+      }
     })
   }
 })

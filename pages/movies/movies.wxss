@@ -1,7 +1,11 @@
 @import "movies-list/movies-list-template.wxss";
 @import "movies-grid/movies-grid.wxss";
 .container{
-  background-color: #efefef;
+  background-color: #0094ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 .moviesTemplate{
