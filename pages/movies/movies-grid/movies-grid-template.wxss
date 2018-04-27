@@ -1,0 +1,9 @@
+@import "../movies-item/movies-item-template.wxss";
+.singleMovieContainer{
+  float: left;
+  margin-bottom: 20rpx;
+  padding: 15rpx;
+}
+.moviesGridContainer{
+  height: 1300rpx;
+}

@@ -11,6 +11,8 @@ Page({
     inTheatersMovies: { movies: [], movieType: "" },
     comingSoonMovies: { movies: [], movieType: "" },
     top250Movies: { movies: [], movieType: "" },
+    containerShow:true,
+    searchPannel:false
   },
 
   /**
@@ -108,7 +110,7 @@ Page({
       var subject = moviesDouban.subjects[index]
       var title = subject.title
       //处理title，过长的title额外处理一下
-      if (title.legth > 6) {
+      if (title.length > 6) {
         title = title.substring(0, 6)
       }
       var temp = {
@@ -145,7 +147,29 @@ Page({
   onMoreTap: function (event) {
     var categoryType = event.currentTarget.dataset.category
     wx.navigateTo({
-      url: '/pages/movies/movies-details/movies-details?categoryType=' + categoryType,
+      url: '/pages/movies/movies-grid/movies-grid?categoryType=' + categoryType,
+    })
+  },
+  onBindFocus:function(event){
+      this.setData({
+        containerShow: false,
+        searchPannel: true
+      })
+
+  },
+  onBindConfirm:function(event){
+    
+  },
+  onBindBlur:function(event){
+    this.setData({
+      containerShow: true,
+      searchPannel: false
+    })
+  }, 
+  onCancelImgTap:function(event){
+    this.setData({
+      containerShow: true,
+      searchPannel: false
     })
   }
 })

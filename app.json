@@ -2,6 +2,7 @@
   "pages": [
     "pages/movies/movies",
     "pages/movies/movies-details/movies-details",
+    "pages/movies/movies-grid/movies-grid",
     "pages/posts/post",
     "pages/posts/post-detail/post-detail",
     "pages/ganhuo/ganhuo",
@@ -9,10 +10,10 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarBackgroundColor": "#efefef",
     "navigationBarTitleText": "rui",
     "navigationBarTextStyle": "black",
-    "backgroundColor": "#0094ff",
+    "backgroundColor": "#efefef",
     "enablePullDownRefresh": true
   },
   "tabBar": {

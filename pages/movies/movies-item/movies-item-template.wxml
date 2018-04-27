@@ -1,9 +1,9 @@
-<import src="../stars/stars-template.wxml"/>
+<import src="../stars/stars-template.wxml" />
 <template name="moviesItemTemplate">
-      <view class="moviesItemContainer">
-        <image src="{{converageUrl}}" class="moviesItemImg">
-        </image>
-        <text class="moviesItemTitle">{{title}}</text>
-        <template is="moviesStarTemplate" data="{{stars:stars,average:average}}"></template>
+    <view class="moviesItemContainer">
+      <image src="{{converageUrl}}" class="moviesItemImg">
+      </image>
+      <text class="moviesItemTitle">{{title}}</text>
+      <template is="moviesStarTemplate" data="{{stars:stars,average:average}}"></template>
     </view>
 </template>

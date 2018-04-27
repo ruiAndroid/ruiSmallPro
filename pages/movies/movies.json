@@ -1,5 +1,5 @@
 {
-  "enablePullDownRefresh": false,
+  "enablePullDownRefresh": true,
   "navigationBarBackgroundColor": "#ffffff",
   "navigationBarTitleText": "电影列表"
 }
