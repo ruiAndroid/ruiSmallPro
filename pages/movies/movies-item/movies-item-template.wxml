@@ -1,6 +1,6 @@
 <import src="../stars/stars-template.wxml" />
 <template name="moviesItemTemplate">
-    <view class="moviesItemContainer">
+    <view class="moviesItemContainer" catchtap='onMoviesTap' data-movieId="{{movieId}}">
       <image src="{{converageUrl}}" class="moviesItemImg">
       </image>
       <text class="moviesItemTitle">{{title}}</text>

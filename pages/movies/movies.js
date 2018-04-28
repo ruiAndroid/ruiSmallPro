@@ -157,6 +157,14 @@ Page({
       url: '/pages/movies/movies-grid/movies-grid?categoryType=' + categoryType,
     })
   },
+  //跳转到电影详情页面
+  onMoviesTap:function (event) {
+    var movieId=event.currentTarget.dataset.movieid
+    wx.navigateTo({
+      url: '/pages/movies/movies-details/movies-details?movieId=' + movieId,
+    })
+  },
+  //搜索框获取焦点
   onBindFocus:function(event){
       this.setData({
         containerShow: false,

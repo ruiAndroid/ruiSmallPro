@@ -1,1 +1,42 @@
-/* pages/movies/movies-details/movies-details.wxss */
+@import "../stars/stars-template.wxss";
+.container{
+
+}
+
+.movieDetailImg{
+    width: 100%;
+    height: 320rpx;
+}
+.head-img-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 320rpx;
+  float: left;
+  background-color: #0094ff;
+}
+.main-title{
+  font-size: 30px;
+
+}
+.sub-title{
+  margin-top: 20rpx;
+  font-size: 25px;
+}
+
+.like{
+  margin-top: 30rpx;
+}
+
+.highlight-font{
+  color: red;
+  font-size: 20px;
+}
+.plain-font{
+  color: gray;
+  margin-left: 15rpx;
+  margin-right: 25rpx;
+  font-size: 20px;
+}
+
+
