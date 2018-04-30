@@ -1,7 +1,7 @@
 <import src="../stars/stars-template.wxml" />
 <view class="container">
 
-  <image class="head-img" class="movieDetailImg" src="{{movie.movieImg}}" mode="aspectFill"></image>
+  <image class="head-img"  src="{{movie.movieImg}}" mode="aspectFill"></image>
   <view class="head-img-container">
     <text class="main-title">{{movie.title}}</text>
     <text class="sub-title">{{movie.country}}</text>
@@ -14,7 +14,7 @@
   </view>
 
 
-  <image class="movie-img" src="{{movie.movieImg}}" data-src="{{movie.movieImg}}" />
+  <image class="movie-img" src="{{movie.movieImg}}" mode="aspectFill" data-src="{{movie.movieImg}}" />
 
   <view class="summary">
     <text class="originalTitle">{{movie.originalTitle}}</text>
@@ -26,15 +26,15 @@
 
     <view class="flex-row">
       <text class="mark">导演</text>
-      <text>{{movie.director.name}}</text>
+      <text class="actor">{{movie.director.name}}</text>
     </view>
     <view class="flex-row">
       <text class="mark">影人</text>
-      <text>{{movie.casts}}</text>
+      <text class="actor">{{movie.casts}}</text>
     </view>
     <view class="flex-row">
       <text class="mark">类型</text>
-      <text>{{movie.generes}}</text>
+      <text class="actor">{{movie.generes}}</text>
     </view>
   </view>
 
