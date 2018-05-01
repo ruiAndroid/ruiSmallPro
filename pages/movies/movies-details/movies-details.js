@@ -118,5 +118,13 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  //大图预览
+  onViewBigImg:function(e){
+    var src=e.currentTarget.dataset.src
+    wx.previewImage({
+      current:src,
+      urls: [src],
+    })
   }
 })

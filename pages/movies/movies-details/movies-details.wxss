@@ -119,16 +119,16 @@ font-size: 12px;
 }
 
 .cast-imgs{
-
+  flex-wrap: nowrap;
 }
 .cast-container{
-  display:inline-flex;
+    display:inline-flex;
     flex-direction: column;
     margin-bottom: 50rpx;
     margin-right: 40rpx;
     width: 170rpx;
     text-align:center;
-    white-space: normal;
+    
 }
 .cast-img{
     width: 170rpx;
@@ -136,4 +136,5 @@ font-size: 12px;
 }
 .cast-name{
   font-size: 15px;
+  word-break: break-all;
 }

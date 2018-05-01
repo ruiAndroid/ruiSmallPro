@@ -1,7 +1,7 @@
 <import src="../stars/stars-template.wxml" />
 <view class="container">
 
-  <image class="head-img"  src="{{movie.movieImg}}" mode="aspectFill"></image>
+  <image class="head-img"  src="{{movie.movieImg}}" catchtap='' mode="aspectFill"></image>
   <view class="head-img-container">
     <text class="main-title">{{movie.title}}</text>
     <text class="sub-title">{{movie.country}}</text>
@@ -14,7 +14,7 @@
   </view>
 
 
-  <image class="movie-img" src="{{movie.movieImg}}" mode="aspectFill" data-src="{{movie.movieImg}}" />
+  <image class="movie-img" catchtap='onViewBigImg' src="{{movie.movieImg}}" mode="aspectFill" data-src="{{movie.movieImg}}" />
 
   <view class="summary">
     <text class="originalTitle">{{movie.originalTitle}}</text>
